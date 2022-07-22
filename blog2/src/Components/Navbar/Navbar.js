@@ -7,7 +7,7 @@ import navimg from './welcome.jpg'
 
 
 const Navbar = () => {
-  const PF = "../../../../src/images/"
+  const PF = "../../../../images/"
  const {user,state,dispatch} = useContext(Context)
 
  const handelLogout=()=>{
@@ -63,7 +63,7 @@ const Navbar = () => {
           <div className="col-lg-4 nav-user">
             {
               user?<Link className="nav-link" to="/updateprofile"><img 
-              src={ (PF+user.profilepic) ||navimg} alt="net problem"/></Link> :<></>
+              src={ (PF+user.profilepic) ||navimg} alt="Please Login Again"/></Link> :<></>
             }
                 
                 {/* <i class="fa-solid fa-magnifying-glass"></i> */}

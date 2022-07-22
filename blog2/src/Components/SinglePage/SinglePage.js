@@ -6,7 +6,7 @@ import './SinglePage.css'
 
 const SinglePage = () => {
     const {user} = useContext(Context)
-    // const PF = "../../../../src/images/"
+    const PF = "../../../../images/"
     const location = useLocation()
     
     const [post,setPost]=useState({})
@@ -40,7 +40,7 @@ const SinglePage = () => {
     <>
       <div className='SinglePost'>
         <div className='SinglePost-img'>
-            {/* <img src={PF +post.photo}/> */}
+            <img src={PF +post.photo} alt="Network Problem"/>
         </div>
         <div className='SinglePost-other'>
             <div className='SinglePost-aandd'>
