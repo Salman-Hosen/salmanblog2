@@ -12,7 +12,7 @@ const multer = require('multer')
     // create imgae storage
 const storage = multer.diskStorage({
     destination:(req,file,cb)=>{
-        cb(null,"src/images")
+        cb(null,"/images")
     },
     filename:(req,file,cb)=>{
         cb(null,req.body.name)
@@ -35,13 +35,13 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 // Using Routes
-const authRoute = require('./src/routes/auth')
+const authRoute = require('./routes/auth')
 app.use('/api/auth',authRoute)
-const userRoute = require('./src/routes/users')
+const userRoute = require('./routes/users')
 app.use('/api/user',userRoute)
-const postRoute = require('./src/routes/posts')
+const postRoute = require('./routes/posts')
 app.use('/api/post',postRoute)
-const catagoryRoute = require('./src/routes/catagory')
+const catagoryRoute = require('./routes/catagory')
 app.use('/api/catagory',catagoryRoute)
 
 
