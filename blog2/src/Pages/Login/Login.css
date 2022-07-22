@@ -1,0 +1,56 @@
+.Login{
+    margin-top: 0px;
+    background: linear-gradient(
+        rgba(255,255,255,0.2),
+        rgba(255,255,255,0.1)
+    ),
+     url('./loginbg1.jpg');
+    background-size: cover;
+    height: calc(100vh - 45px);
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.Login .regibutton{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 150px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    background-color: orangered;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+.Login .regibutton:hover{
+    background-color: aqua;
+    transition: 1s ;
+    transform: scale(1.1);
+}
+
+.Login form{
+    display: flex;
+    flex-direction: column;
+    
+}
+.Login form h2{
+    text-align: center;
+}
+
+.Login form button{
+    height: 40px;
+    padding: 8px;
+    border: none;
+    background-color: yellowgreen;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.Login form button:hover{
+    background-color: green;
+    transition: 1s ;
+    transform: scale(1.1);
+}

@@ -1,0 +1,83 @@
+.Sidebar{
+    width: 25%;
+    box-sizing: border-box;
+    padding: 20px;
+    display: inline-block;
+    position:sticky;
+    top: 0px;
+    background-color: #fefcfc;
+    color: black;
+}
+
+.Sidebar .Sidebar-about h2{
+    margin-top: 20px;
+    border-top: 2px solid #a7a4a4;
+    border-bottom: 2px solid #a7a4a4;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+.Sidebar .Sidebar-about-img{
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+.Sidebar .Sidebar-about img{
+    width: 100%;
+    height: 250px;
+    display: block;
+    margin: 0 auto;
+}
+.Sidebar .Sidebar-about p{
+    margin-top: 5px;
+    text-align: justify;
+}
+.Sidebar .Sidebar-catagory{
+    margin-top: 20px;
+    border-top: 2px solid #a7a4a4;
+    border-bottom: 2px solid #a7a4a4;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 25px;
+    
+}
+.Sidebar .Sidebar-menu {
+    margin-left: 30px;
+}
+
+.Sidebar .Sidebar-menu h4{
+    width: 50%;
+    display: inline-block;
+    margin-top: 15px;
+    cursor: pointer;
+    font-size: 15px;
+    
+}
+.Sidebar .Sidebar-menu h4:hover{
+    transition: 1s;
+    color: green;
+    transform: scale(1.1);
+}
+
+.Sidebar .Sidebar-social{
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 30px;
+    font-size: 25px;
+}
+.Sidebar .Sidebar-social i{
+    font-size: 27px;
+    padding: 12px;
+    cursor: pointer;  
+}
+.Sidebar .Sidebar-social i:hover{
+    transform: scale(1.2); 
+    transition: 1s ease-out;
+    color: violet;
+}
+
+@media only screen and (max-width: 600px) {
+    .Sidebar{
+        display: none;
+    }
+  }

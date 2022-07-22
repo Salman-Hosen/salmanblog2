@@ -1,0 +1,37 @@
+.Posts {
+    width: 75%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: stretch;
+}
+.Post_{
+    display: inline-block;
+}
+.postdiv{
+    
+        width: 33%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+       
+    
+}
+
+@media only screen and (max-width: 600px) {
+    .Posts{
+        width: 100%;
+        box-sizing: border-box;
+        display: inline-block;
+    }
+    .postdiv{
+    
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+       
+}
+  }

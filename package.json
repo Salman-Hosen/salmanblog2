@@ -1,0 +1,28 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "This is for a blog site",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install --only=dev && npm install && npm run build"
+  },
+  "keywords": [
+    "nodemon"
+  ],
+  "author": "Salman Farshi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.0",
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "mongoose": "^6.4.1",
+    "multer": "^1.4.5-lts.1",
+    "nodemon": "^2.0.18",
+    "path": "^0.12.7"
+  },
+  "engines": {
+    "node": "8.9.2"
+}
+}

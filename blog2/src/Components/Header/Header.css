@@ -1,0 +1,17 @@
+.greetings{
+    height: 260px;
+    width: 100%;
+    background-image: linear-gradient(to bottom, green , yellow  );
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px) {
+    .greetings{
+        height: 150px;
+    }
+    
+  }

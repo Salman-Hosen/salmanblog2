@@ -1,0 +1,110 @@
+.Profile {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-top: 10px;
+}
+.Profile-setting{
+    width: 100%;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-left: 30px;
+    
+    
+}
+.Profile-setting .Profile-titles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    color: red;
+}
+.Profile-setting .Profile-titles h5{
+    cursor: pointer;
+}
+
+.user-profile-updare img{
+    height: 150px;
+    width: 150px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.user-profile-updare  i{
+    cursor: pointer;
+}
+.Profile-setting form{
+    display: flex;
+    flex-direction: column;
+}
+
+.Profile-setting form label{
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 30px;
+}
+.Profile-setting form input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(219, 215, 215);
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+}
+.Profile-setting form input:hover{
+    outline: none;
+}
+.Profile-setting form button{
+    width: 150px;
+    height: 40px;
+    padding: 8px;
+    border: none;
+    background-color: green;
+    display: block;
+    float: right;
+    border-radius: 10px;
+    
+}
+
+.Profile-setting  .profile-publish{
+    
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: flex-start;
+        margin-top: 33px;
+    
+}
+
+.Others-setting .update-data .update-user{
+    display: flex;
+    flex-direction: column;
+}
+.Others-setting .update-data .profile-publis{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: flex-start;
+
+}
+
+.Others-setting .update-data .password input{
+    width: 100%;
+}
+
+.Others-setting .update-data .password i{
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+    .Profile-setting{
+        width: 100%;
+        padding: 20px;
+        
+    }
+  }
